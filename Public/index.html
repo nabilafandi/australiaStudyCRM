@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Students CRM</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+  <div id="wrapper" style=display:flex;>
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 "
+      style="width: 30%;height: 100vh; background-color: #f8f9fa;">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      <select class="form-control" id="progress-search">
+        <option>Select Progress</option>
+        <option>Consul</option>
+        <option>Apply</option>
+        <option>COE</option>
+        <option>Visa Applied</option>
+        <option>Visa Granted</option>
+        <option>Visa Rejected</option>
+      </select>
+      <div class="list-group list-group-flush border-bottom " style="height: 50%; overflow-y: scroll; ">
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-tight"></a>
+      </div>
+      <div class="form-group overflow-auto p-2 ">
+        <label for="first name">First Name:</label>
+        <input type="first-name" class="form-control" id="first-name" placeholder="first name">
+        <label for="first name">Last Name:</label>
+        <input type="last-name" class="form-control" id="last-name" placeholder="last name">
+        <label for="first name">Reference:</label>
+        <input type="reference" class="form-control" id="reference" placeholder="reference">
+        <label for="first name">Status:</label>
+        <input type="status" class="form-control" id="status" placeholder="status">
+        <label for="first name">Progress Select:</label>
+        <select class="form-control" id="progress-select">
+          <option>Select Progress</option>
+          <option>Consul</option>
+          <option>Apply</option>
+          <option>COE</option>
+          <option>Visa Applied</option>
+          <option>Visa Granted</option>
+          <option>Visa Rejected</option>
+        </select>
+      </div>
+        <div id="buttons" style="margin-top: 10px; display: grid; grid-gap: 12px;
+        ">
+          <button type="button" class="btn btn-primary" id="add-button">Add</button>
+          <button type="button" class="btn btn-success"id="update-button">Update</button>
+          <button type="button" class="btn btn-danger"id="delete-button">Delete</button>
+        </div>
+    </div>
+    <!-- comment section -->
+    <section style="width: 100%;height: 100vh; background-color: #F2F5F8 ;">
+      <div class="text-center">
+        <h1 class="mb-3" id="name-header" style="height: 6vh;">Students</h1>
+      </div>
+      <div class="form-outline m-5 p-4">
+        <div class="date-picker-container">
+          <input type="date" id="date-picker">
+        </div>
+        <textarea class="form-control" id="textAreaExample2" rows="3"></textarea>
+        <button type="button" class="btn btn-primary btn-sm float-end w-100" id="submit-button">Submit</button>
+      </div>
+      <div class="card overflow-y-auto " style="height: 72vh; ">
+        <div class="card-body border-light-subtle" id="listcomment">
+          
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
